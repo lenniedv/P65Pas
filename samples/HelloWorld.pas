@@ -2,11 +2,12 @@
 program Hello;
 uses X16;
 begin
-  //ChrOUT('H');
-  //ChrOUT('E');
-  //ChrOUT('L');
-  //ChrOUT('L');
-  //ChrOUT('O');
   CLRSCR;
+  ChrOUT('H');
+  ChrOUT('E');
+  ChrOUT('L');
+  ChrOUT('L');
+  ChrOUT('O');
+  
   asm RTS end 
 end.
