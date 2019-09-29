@@ -21,6 +21,9 @@ var
   screenBorder: byte absolute 53280;  // TODO
   screenBack  : byte absolute 53281;  // TODO
   screen: [1000]byte absolute $400; // TODO
+  
+  procedure Locate(x: byte; y: byte);
+  
   //////////// KERNAL FUNCTIONS //////////
  
   //Initialize VIC; restore default input/output to keyboard/screen; clear screen; set PAL/NTSC switch and interrupt timer.
@@ -86,6 +89,16 @@ implementation
     asm 
     JSR $FFD2  ;argument already in A register
     end 
+  end; 
+  
+  procedure Locate(x: byte; y: byte);
+  begin
+  asm 
+	  ldx #x
+    ldy #y
+    clc
+    jsr $fff0  
+  end 
   end; 
   
   (*

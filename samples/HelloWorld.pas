@@ -3,6 +3,7 @@ program Hello;
 uses X16;
 begin
   CLRSCR;
+  Locate(20, 40);
   ChrOUT('H');
   ChrOUT('E');
   ChrOUT('L');
