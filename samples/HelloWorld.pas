@@ -1,11 +1,12 @@
 {"Hello World" P65Pas program.}
 program Hello;
-uses Commodore64;
+uses X16;
 begin
-  ChrOUT('H');
-  ChrOUT('E');
-  ChrOUT('L');
-  ChrOUT('L');
-  ChrOUT('O');
+  //ChrOUT('H');
+  //ChrOUT('E');
+  //ChrOUT('L');
+  //ChrOUT('L');
+  //ChrOUT('O');
+  CLRSCR;
   asm RTS end 
 end.
